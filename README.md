@@ -84,6 +84,10 @@ This repository contains datasets and scripts related to geothermal temperature 
 
 Each dataset includes relevant metadata for each row, such as references, geothermal field information (e.g., lithology, location), well names, and sample names as originally reported by the bibliographic sources.
 
+## References
+
+For a detailed list of references related to Yemen’s geothermal energy potential, please see the [references.txt](./references.txt) file.
+
 ## Usage
 
 To reproduce the analyses presented in our study, follow these steps:
