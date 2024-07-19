@@ -19,26 +19,47 @@ This repository contains datasets and scripts related to geothermal temperature 
 
 ### Machine Learning Models and Results
 
+### Machine Learning Models and Results
+
 - `Geothermal-temperature/`: Contains models and results related to geothermal temperature predictions.
-    - `Gaussian-Set-1`
-    - `Gaussian-Set-1-CV-crossPlot`
-    - `Gaussian-Set-1-CV-crossPlot-optimized`
-    - `linearRegression-set-1`
-    - `M5P-set-1`
-    - `M5P-set-1-Testing-CrossPlot`
-    - `MLP-set-1`
-    - `RBFRegressor-set-1`
-    - `REPT-set-1`
-    - `REPT-set-1-After-outlier`
-    - `REPT-set-1-After-outlier+randomize`
-    - `REPT-set-1-After-outlier+randomize+SMOTE-Training`
-    - `REPT-set-1-After-outlier+randomize+SMOTE-Training+Testing`
-    - `RF-set-1`
-    - `RT-set-2`
-    - `simpleLinearRegression-set-1`
-    - `simpleLinearRegression-set-1-CV-Cross-No-optim`
-    - `SMOreg-set-1`
-    - `SMOreg-set-1-CV-Cross-No-optim`
+    - `Enhanced optimized of set1 and 2`
+    - `Enhanced cross plot`
+    - `Enhanced and updated GP-result-without outlier`
+    - `Enhanced and updated GP-result-with outlier`
+    - `Enhanced comparison for Set-1before Opt and after`
+    - `Enhanced comparison for Set-2 before Opt and after`
+    - `Enhanced Gaussian Set-1 TS Before Opt + After`
+    - `Enhanced Gaussian Set-1 TS crossPlot with and without outlier`
+    - `Enhanced Gaussian Set-2 Testing without outlier`
+    - `Enhanced MLP-Set-2 &1-TS Optimized & Not optimized`
+    - `Enhanced RF-Predicted vs measure`
+    - `Enhanced set-1 GP-training&testing-Optimized`
+    - `Enhanced SMOreg set-1 TS-N Before & After opt`
+    - `Enhanced Summary-IQR`
+    - `Enhanced Summary-No-opt set1+set2`
+    - `Geothermal-temperature`
+    - `Geothermal-temperature-gradient`
+    - `GP_model_performance_with_final_calibration`
+    - `MLP-set-2-CV After & After opt`
+    - `RandomCommittee-training-cross`
+    - `S-1-with-outlier`
+    - `S-2-with-outlier`
+    - `Set-1-LOF`
+    - `Set-1-model-LOF-training.model`
+    - `Set-1-model-LOF-training+testing.model`
+    - `Set-1-Crossplot-testing-No-outlier.xlsx`
+    - `Set-1-Crossplot-training+testing.xlsx`
+    - `Set-1.model`
+    - `Set-1-cross-plot-training.xlsx`
+    - `Set-1-cross-plot-training-No-outlier.xlsx`
+    - `Set-1-testing-results-1.xlsx`
+    - `Set-1-training+testing-LOF-results.xlsx`
+    - `Set-2.model`
+    - `Set-2-testing-results-Cross-No-outlier.xlsx`
+    - `Set-2-training-results-Cross.xlsx`
+    - `Set-2-training-results-Cross-No-outlier.xlsx`
+    - `Summary-IQR.xlsx`
+
 - `Geothermal-temperature-gradient/`: Contains models and results related to geothermal temperature gradient predictions.
     - `Gaussian-Set-2`
     - `Gaussian-Set-2-CrossP-CV-with-optimization`
