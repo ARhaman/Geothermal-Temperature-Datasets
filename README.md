@@ -104,10 +104,6 @@ results-TR-CV-Test.xlsx
 
 Each dataset includes relevant metadata for each row, such as references, geothermal field information (e.g., lithology, location), well names, and sample names as originally reported by the bibliographic sources.
 
-## References
-
-For a detailed list of references related to Yemen’s geothermal energy potential, please see the [references.txt](./references.txt) file.
-
 🚀 Usage Guide
 Follow these simple steps to preprocess the data, train models, and visualize results:
 
@@ -166,8 +162,12 @@ Python: 3.8+
 Install dependencies:
 bash
 Copy code
+bash
 pip install -r requirements.txt
 
+
+## References
+For a detailed list of references related to Yemen’s geothermal energy potential, please see the references.txt file.
 
 
 ## Contributing
