@@ -26,8 +26,6 @@ This repository contains datasets and scripts for geothermal temperature analysi
 
 ---
 
----
-
 ## 🚀 Usage Guide
 
 Follow these simple steps to preprocess the data, train models, and visualize results.
@@ -77,19 +75,21 @@ Use the provided files to compare performance:
 
 📂 Set-1 Results: Enhanced comparison for Set-1 before Opt and after.xlsx
 📂 Set-2 Results: Enhanced comparison for Set-2 before Opt and after.xlsx
+
 These files highlight the differences before and after Bayesian optimization.
 🛠 System Requirements
 Python: 3.8+
 Install Dependencies:
 pip install -r requirements.txt
 
----
+
 ### Metadata
 Each dataset includes metadata for rows, such as:
 • Geothermal field data (e.g., lithology, location).
 • Well names and sample references from original sources.
 
 ---
+
 🤝 Contributing
 We welcome contributions to improve this repository! Please submit pull requests with clear descriptions of your changes.
 
@@ -100,7 +100,8 @@ This project is licensed under the MIT License.
 For inquiries, contact Abdulrahman Al-Fakih: alja2014ser@gmail.com
 
 ---
-## 📖 Citation
+
+📖 Citation
 If you find this repository helpful, please cite:
 
 **Al-Fakih, A., et al.** (2024). Forecasting geothermal temperature in western Yemen using Bayesian-optimized machine learning.
