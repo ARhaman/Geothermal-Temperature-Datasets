@@ -62,6 +62,7 @@ python models/rf_training.py \
   --test datasets/dataset-2.arff \
   --output results/rf_results/
 
+
 3️⃣ Generate Visualizations
 Create cross-plots and visualizations for the results:
 python scripts/plot_generator.py \
@@ -70,16 +71,17 @@ python scripts/plot_generator.py \
 Input: Model predictions (predicted_vs_measured.xlsx).
 Output: Plot saved in plots/mlp_crossplot.png.
 
+
 4️⃣ Compare Model Performance
 Use the provided files to compare performance:
 
-📂 Set-1 Results: Enhanced comparison for Set-1 before Opt and after.xlsx
-📂 Set-2 Results: Enhanced comparison for Set-2 before Opt and after.xlsx
+📂 **Set-1 Results**: Enhanced comparison for Set-1 before Opt and after.xlsx
+📂 **Set-2 Results**: Enhanced comparison for Set-2 before Opt and after.xlsx
 
 These files highlight the differences before and after Bayesian optimization.
 🛠 System Requirements
-Python: 3.8+
-Install Dependencies:
+**Python**: 3.8+
+**Install Dependencies**:
 pip install -r requirements.txt
 
 
@@ -88,7 +90,7 @@ Each dataset includes metadata for rows, such as:
 • Geothermal field data (e.g., lithology, location).
 • Well names and sample references from original sources.
 
----
+
 
 🤝 Contributing
 We welcome contributions to improve this repository! Please submit pull requests with clear descriptions of your changes.
@@ -99,7 +101,7 @@ This project is licensed under the MIT License.
 ✉️ Contact
 For inquiries, contact Abdulrahman Al-Fakih: alja2014ser@gmail.com
 
----
+
 
 📖 Citation
 If you find this repository helpful, please cite:
