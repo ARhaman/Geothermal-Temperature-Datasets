@@ -184,7 +184,6 @@ pip install -r requirements.txt
 yaml
 Copy code
 
----
 
 ### Tips for Enhancing Code Blocks in GitHub:
 
@@ -199,8 +198,6 @@ Copy code
 
 4. **Avoid Long Lines**:
    - Break long lines using backslashes (`\`) for better readability.
-
----
 
 ## References
 For a detailed list of references related to Yemen’s geothermal energy potential, please see the references.txt file.
