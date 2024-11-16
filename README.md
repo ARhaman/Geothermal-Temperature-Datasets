@@ -1,4 +1,4 @@
-v# 🌍 Geothermal Temperature Prediction in Western Yemen
+# 🌍 Geothermal Temperature Prediction in Western Yemen
 
 This repository contains datasets and scripts for geothermal temperature analysis in the western region of Yemen. The data includes surface and subsurface temperatures alongside various geographical and geological parameters. Our goal is to provide metadata and tools for reproducibility and validation of the methodologies used.
 
