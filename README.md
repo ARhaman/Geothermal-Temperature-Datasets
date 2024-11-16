@@ -104,7 +104,7 @@ results-TR-CV-Test.xlsx
 
 Each dataset includes relevant metadata for each row, such as references, geothermal field information (e.g., lithology, location), well names, and sample names as originally reported by the bibliographic sources.
 
-🚀 Usage Guide
+### 🚀 Usage Guide
 Follow these simple steps to preprocess the data, train models, and visualize results:
 
 1️⃣ Preprocess the Data
@@ -113,8 +113,8 @@ Clean datasets, handle missing values, and prepare your data for modeling:
 bash
 Copy code
 python scripts/data_preprocessing_script.py \
-  --input datasets/data-temperature-depth-missing.xlsx \
-  --output datasets/processed-data.xlsx
+  -- input datasets/data-temperature-depth-missing.xlsx \
+  -- output datasets/processed-data.xlsx
 Input: datasets/data-temperature-depth-missing.xlsx
 Output: datasets/processed-data.xlsx
 2️⃣ Train Machine Learning Models
