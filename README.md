@@ -112,7 +112,7 @@ For a detailed list of references related to Yemen’s geothermal energy potenti
 
 To reproduce the analyses presented in our study, follow these steps:
 1. Preprocessing Data
-Run the preprocessing script to clean and handle missing data:
+%Run the preprocessing script to clean and handle missing data:
 python scripts/data_preprocessing_script.py --input datasets/data-temperature-depth-missing.xlsx --output datasets/processed-data.xlsx
 
 
