@@ -202,15 +202,6 @@ Copy code
 
 ---
 
-When you push this Markdown file to GitHub, it will render with proper syntax highlighting, comments, and a clear structure just like your example! Let me know if you need help implementing it.
-
-
-
-
-
-
-
-
 ## References
 For a detailed list of references related to Yemen’s geothermal energy potential, please see the references.txt file.
 
