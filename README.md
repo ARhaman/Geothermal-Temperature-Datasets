@@ -135,17 +135,18 @@ python scripts/data_preprocessing_script.py \
 
 Input: datasets/data-temperature-depth-missing.xlsx
 Output: datasets/processed-data.xlsx
-
+---
 ### 2️⃣ Train Machine Learning Models
 Use the provided datasets to train models and generate predictions:
 
 🔹 Gaussian Process (GP)
+---
 bash
 Copy code
 python models/gp_model_training.py \
   --dataset datasets/GP-result-no-outlier.xlsx \
   --output models/gp_results/
-
+---
 🔹 Multi-Layer Perceptron (MLP)
 bash
 Copy code
