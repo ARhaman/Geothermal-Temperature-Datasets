@@ -111,110 +111,11 @@ For a detailed list of references related to Yemen’s geothermal energy potenti
 ## Usage
 
 To reproduce the analyses presented in our study, follow these steps:
-
-1. Datasets Overview
-Explain the purpose and format of the datasets:
-
-dataset-1.arff and dataset-2.arff: Main datasets for geothermal temperature analysis.
-data-temperature-depth.xlsx: Contains summarized temperature data at various depths.
-GP-result-no outlier.xlsx and GP-result-outlier.xlsx: Used for Gaussian Process modeling with and without outliers.
-Enhanced comparison for Set-1 before Opt and after.xlsx: Highlights results for Set-1 before and after Bayesian optimization.
-2. Preprocessing Data
-Provide detailed steps for preprocessing:
-
-Preprocessing Missing Data:
-
-Use the file data-temperature-depth-missing.xlsx for testing imputation methods.
-Run the preprocessing script:
-bash
-Copy code
+1. Preprocessing Data
+Run the preprocessing script to clean and handle missing data:
 python scripts/data_preprocessing_script.py --input datasets/data-temperature-depth-missing.xlsx --output datasets/processed-data.xlsx
-Input: Missing data file.
-Output: Cleaned and imputed data file saved in datasets/.
-Handling Outliers:
 
-Use set-1-Crossplot-testing-No-outlier.xlsx and set-1-Crossplot-training+testing.xlsx for training and testing with and without outliers.
-Example:
-bash
-Copy code
-python scripts/outlier_detection.py --input datasets/GP-result-no-outlier.xlsx --output results/no_outliers_processed.xlsx
-3. Running Machine Learning Models
-Explain how to train and test models:
 
-Gaussian Process Model:
-
-Training:
-bash
-Copy code
-python models/gp_model_training.py --dataset datasets/GP-result-no-outlier.xlsx --output models/gp_results/
-Testing:
-bash
-Copy code
-python models/gp_model_testing.py --model models/gp_results/model.pkl --test datasets/dataset-2.arff
-Outputs:
-Trained model saved in models/.
-Predictions saved in results/.
-MLP Model:
-
-Training:
-bash
-Copy code
-python models/mlp_training.py --train datasets/dataset-1.arff --test datasets/dataset-2.arff --output results/mlp_results/
-Example Output:
-Enhanced MLP-Set-2 &1-TS Optimize.xlsx: Contains optimized results.
-MLP-set-2-CV-CrossPlot-optimized.xlsx: Cross-plots for optimized MLP model.
-Random Forest Model:
-
-Training:
-bash
-Copy code
-python models/rf_training.py --train datasets/dataset-1.arff --test datasets/dataset-2.arff --output results/rf_results/
-Example Output:
-Enhanced RF-Predicted vs measure.xlsx: Predicted vs. measured results for RF.
-4. Comparing Results
-Explain how to use comparison files:
-
-Set-1 Results:
-Use Enhanced comparison for Set-1 before Opt and after.xlsx for comparing model performance before and after optimization.
-Set-2 Results:
-Use Enhanced comparison for Set-2 before Opt and after.xlsx for similar comparisons on Set-2.
-5. Visualization
-Provide instructions for generating cross-plots and visualizations:
-
-Cross-Plots:
-For Set-1, use:
-bash
-Copy code
-python scripts/plot_generator.py --input results/Enhanced-set-1-cross-plot-training.xlsx --output plots/set1_crossplot.png
-For Set-2, use:
-bash
-Copy code
-python scripts/plot_generator.py --input results/Enhanced-set-2-cross-plot-testing-No-outlier.xlsx --output plots/set2_crossplot.png
-6. System Requirements
-Languages: Python 3.8+, R (optional).
-Dependencies: Use requirements.txt:
-bash
-Copy code
-pip install -r requirements.txt
-7. Reproducing the Study
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/ARhaman/Geothermal-Western-Yemen.git
-cd Geothermal-Western-Yemen
-Preprocess the data:
-bash
-Copy code
-python scripts/data_preprocessing_script.py --input datasets/data-temperature-depth.xlsx --output datasets/processed.xlsx
-Train models:
-Example for MLP:
-bash
-Copy code
-python models/mlp_training.py --train datasets/dataset-1.arff --test datasets/dataset-2.arff --output results/mlp_results/
-Visualize results:
-bash
-Copy code
-python scripts/plot_generator.py --input results/mlp_results/predicted_vs_measured.xlsx --output pl
 
 ## Contributing
 
