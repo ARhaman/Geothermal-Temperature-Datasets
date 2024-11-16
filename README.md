@@ -78,11 +78,6 @@ Python: 3.8+
 Install Dependencies:
 pip install -r requirements.txt
 
-
-#### **Metadata Section Updated**:
-```markdown
----
-
 ### Metadata
 
 Each dataset includes metadata for rows, such as:
