@@ -109,11 +109,67 @@ Each dataset includes relevant metadata for each row, such as references, geothe
 For a detailed list of references related to Yemen’s geothermal energy potential, please see the [references.txt](./references.txt) file.
 
 ## Usage
+🚀 Usage Guide
+Follow these simple steps to preprocess the data, train models, and visualize results:
 
-To reproduce the analyses presented in our study, follow these steps:
-1. Preprocessing Data
-%Run the preprocessing script to clean and handle missing data:
-python scripts/data_preprocessing_script.py --input datasets/data-temperature-depth-missing.xlsx --output datasets/processed-data.xlsx
+1️⃣ Preprocess the Data
+Clean datasets, handle missing values, and prepare your data for modeling:
+
+bash
+Copy code
+python scripts/data_preprocessing_script.py \
+  --input datasets/data-temperature-depth-missing.xlsx \
+  --output datasets/processed-data.xlsx
+Input: Raw data with missing values.
+Output: Cleaned data saved in datasets/processed-data.xlsx.
+2️⃣ Train Machine Learning Models
+Train the provided models using the prepared datasets:
+
+🔹 Gaussian Process (GP)
+bash
+Copy code
+python models/gp_model_training.py \
+  --dataset datasets/GP-result-no-outlier.xlsx \
+  --output models/gp_results/
+🔹 Multi-Layer Perceptron (MLP)
+bash
+Copy code
+python models/mlp_training.py \
+  --train datasets/dataset-1.arff \
+  --test datasets/dataset-2.arff \
+  --output results/mlp_results/
+🔹 Random Forest (RF)
+bash
+Copy code
+python models/rf_training.py \
+  --train datasets/dataset-1.arff \
+  --test datasets/dataset-2.arff \
+  --output results/rf_results/
+Trained Models: Saved in models/.
+Results: Performance metrics and predictions saved in results/.
+3️⃣ Generate Visualizations
+Create cross-plots and other visualizations for your results:
+
+bash
+Copy code
+python scripts/plot_generator.py \
+  --input results/mlp_results/predicted_vs_measured.xlsx \
+  --output plots/mlp_crossplot.png
+Input: Model predictions (e.g., predicted_vs_measured.xlsx).
+Output: Plot saved in plots/mlp_crossplot.png.
+4️⃣ Compare Performance
+Use the provided files to analyze and compare results:
+
+📂 Set-1 Results: Enhanced comparison for Set-1 before Opt and after.xlsx
+📂 Set-2 Results: Enhanced comparison for Set-2 before Opt and after.xlsx
+These files highlight the differences between models before and after Bayesian optimization.
+
+System Requirements
+Python 3.8+
+Install dependencies:
+bash
+Copy code
+pip install -r requirements.txt
 
 
 
