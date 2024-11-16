@@ -104,19 +104,38 @@ results-TR-CV-Test.xlsx
 
 Each dataset includes relevant metadata for each row, such as references, geothermal field information (e.g., lithology, location), well names, and sample names as originally reported by the bibliographic sources.
 
-### 🚀 Usage Guide
+
+To format your code blocks in a GitHub README to appear as they do in the example, follow these steps:
+
+Markdown Syntax for GitHub Code Preview
+Use Triple Backticks (```):
+
+Wrap your code with triple backticks (```) to create a code block.
+Specify the language for syntax highlighting (e.g., python, bash, etc.).
+Add Comments and Indentation:
+
+Include comments (# or //) and organize the code with proper indentation to enhance readability.
+Example for Your README.md
+Here’s how you can structure it for GitHub:
+
+markdown
+Copy code
+## 🚀 Usage Guide
+
 Follow these simple steps to preprocess the data, train models, and visualize results:
 
-1️⃣ Preprocess the Data
-Clean datasets, handle missing values, and prepare your data for modeling:
+---
 
-bash
-Copy code
+### 1️⃣ Preprocess the Data
+Clean datasets, handle missing values, and prepare your data for modeling:
+```bash
 python scripts/data_preprocessing_script.py \
-  -- input datasets/data-temperature-depth-missing.xlsx \
-  -- output datasets/processed-data.xlsx
+  --input datasets/data-temperature-depth-missing.xlsx \
+  --output datasets/processed-data.xlsx
+
 Input: datasets/data-temperature-depth-missing.xlsx
 Output: datasets/processed-data.xlsx
+
 2️⃣ Train Machine Learning Models
 Use the provided datasets to train models and generate predictions:
 
@@ -126,6 +145,7 @@ Copy code
 python models/gp_model_training.py \
   --dataset datasets/GP-result-no-outlier.xlsx \
   --output models/gp_results/
+
 🔹 Multi-Layer Perceptron (MLP)
 bash
 Copy code
@@ -133,6 +153,7 @@ python models/mlp_training.py \
   --train datasets/dataset-1.arff \
   --test datasets/dataset-2.arff \
   --output results/mlp_results/
+
 🔹 Random Forest (RF)
 bash
 Copy code
@@ -140,6 +161,7 @@ python models/rf_training.py \
   --train datasets/dataset-1.arff \
   --test datasets/dataset-2.arff \
   --output results/rf_results/
+
 3️⃣ Generate Visualizations
 Create cross-plots and other visualizations for your results:
 
@@ -148,22 +170,45 @@ Copy code
 python scripts/plot_generator.py \
   --input results/mlp_results/predicted_vs_measured.xlsx \
   --output plots/mlp_crossplot.png
+
 Input: Model predictions (e.g., predicted_vs_measured.xlsx)
 Output: Plot saved in plots/mlp_crossplot.png
-4️⃣ Compare Model Performance
-Use the provided comparison files for analysis:
-
-📂 Set-1 Results: Enhanced comparison for Set-1 before Opt and after.xlsx
-📂 Set-2 Results: Enhanced comparison for Set-2 before Opt and after.xlsx
-These files highlight the differences between models before and after Bayesian optimization.
 
 System Requirements
 Python: 3.8+
 Install dependencies:
+
 bash
 Copy code
-bash
 pip install -r requirements.txt
+yaml
+Copy code
+
+---
+
+### Tips for Enhancing Code Blocks in GitHub:
+
+1. **Add Syntax Highlighting**:
+   - Use the language name after the opening backticks, e.g., ` ```python ` for Python code, ` ```bash ` for terminal commands.
+
+2. **Ensure Proper Indentation**:
+   - Indent code appropriately to make it visually pleasing.
+
+3. **Use Comments**:
+   - Add inline comments in your code to explain each step (e.g., `# Input data file`).
+
+4. **Avoid Long Lines**:
+   - Break long lines using backslashes (`\`) for better readability.
+
+---
+
+When you push this Markdown file to GitHub, it will render with proper syntax highlighting, comments, and a clear structure just like your example! Let me know if you need help implementing it.
+
+
+
+
+
+
 
 
 ## References
