@@ -136,7 +136,7 @@ python scripts/data_preprocessing_script.py \
 Input: datasets/data-temperature-depth-missing.xlsx
 Output: datasets/processed-data.xlsx
 
-2️⃣ Train Machine Learning Models
+## 2️⃣ Train Machine Learning Models
 Use the provided datasets to train models and generate predictions:
 
 🔹 Gaussian Process (GP)
@@ -162,7 +162,7 @@ python models/rf_training.py \
   --test datasets/dataset-2.arff \
   --output results/rf_results/
 
-3️⃣ Generate Visualizations
+## 3️⃣ Generate Visualizations
 Create cross-plots and other visualizations for your results:
 
 bash
@@ -198,7 +198,7 @@ Copy code
 
 4. **Avoid Long Lines**:
    - Break long lines using backslashes (`\`) for better readability.
-
+-------------------------------------------------
 ## References
 For a detailed list of references related to Yemen’s geothermal energy potential, please see the references.txt file.
 
