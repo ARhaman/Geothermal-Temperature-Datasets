@@ -43,6 +43,7 @@ python scripts/data_preprocessing_script.py \
 
 Input: Raw data file with missing values.
 Output: Cleaned data saved in datasets/processed-data.xlsx.
+
 2️⃣ Train Machine Learning Models
 Train models using the provided datasets.
 
@@ -50,16 +51,19 @@ Train models using the provided datasets.
 python models/gp_model_training.py \
   --dataset datasets/GP-result-no-outlier.xlsx \
   --output models/gp_results/
+
 🔹 Multi-Layer Perceptron (MLP)
 python models/mlp_training.py \
   --train datasets/dataset-1.arff \
   --test datasets/dataset-2.arff \
   --output results/mlp_results/
+
 🔹 Random Forest (RF)
 python models/rf_training.py \
   --train datasets/dataset-1.arff \
   --test datasets/dataset-2.arff \
   --output results/rf_results/
+
 3️⃣ Generate Visualizations
 Create cross-plots and visualizations for the results:
 python scripts/plot_generator.py \
@@ -67,6 +71,7 @@ python scripts/plot_generator.py \
   --output plots/mlp_crossplot.png
 Input: Model predictions (predicted_vs_measured.xlsx).
 Output: Plot saved in plots/mlp_crossplot.png.
+
 4️⃣ Compare Model Performance
 Use the provided files to compare performance:
 
@@ -78,15 +83,13 @@ Python: 3.8+
 Install Dependencies:
 pip install -r requirements.txt
 
+---
 ### Metadata
-
 Each dataset includes metadata for rows, such as:
-- Geothermal field data (e.g., lithology, location).
-- Well names and sample references from original sources.
+• Geothermal field data (e.g., lithology, location).
+• Well names and sample references from original sources.
 
-For detailed references related to Yemen’s geothermal energy potential, refer to `references.txt`.
-
-
+---
 🤝 Contributing
 We welcome contributions to improve this repository! Please submit pull requests with clear descriptions of your changes.
 
@@ -97,9 +100,7 @@ This project is licensed under the MIT License.
 For inquiries, contact Abdulrahman Al-Fakih: alja2014ser@gmail.com
 
 ---
-
-## Citation
-
+## 📖 Citation
 If you find this repository helpful, please cite:
 
 **Al-Fakih, A., et al.** (2024). Forecasting geothermal temperature in western Yemen using Bayesian-optimized machine learning.
@@ -107,4 +108,6 @@ If you find this repository helpful, please cite:
 *King Fahd University of Petroleum & Minerals, Dhahran, Saudi Arabia*  
 *Emirates International University, Sanaa, Yemen*  
 *Hadhramout University, Mukalla, Yemen*
+---
+
 
