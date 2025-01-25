@@ -99,18 +99,13 @@ We welcome contributions to improve this repository! Please submit pull requests
 This project is licensed under the MIT License.
 
 ✉️ Contact
-For inquiries, contact Abdulrahman Al-Fakih: alja2014ser@gmail.com
-
+For inquiries, contact Abdulrahman Al-Fakih at :alja2014ser@gmail.com
+---
 
 
 📖 Citation
 If you find this repository helpful, please cite:
-
-**Al-Fakih, A., et al.** (2024). Forecasting geothermal temperature in western Yemen using Bayesian-optimized machine learning.
-
-*King Fahd University of Petroleum & Minerals, Dhahran, Saudi Arabia*  
-*Emirates International University, Sanaa, Yemen*  
-*Hadhramout University, Mukalla, Yemen*
+Al-Fakih, A., Al-khudafi, A., Koeshidayatullah, A. et al. Forecasting geothermal temperature in western Yemen with Bayesian-optimized machine learning regression models. Geotherm Energy 13, 4 (2025). https://doi.org/10.1186/s40517-024-00324-3
 ---
 
 
